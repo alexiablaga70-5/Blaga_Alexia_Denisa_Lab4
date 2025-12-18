@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../PricePredictionModel_WebApi1/PricePredictionModel_WebApi1.csproj" />
+  <Project Path="Blaga_Alexia_Denisa_Lab4.csproj" />
+</Solution>

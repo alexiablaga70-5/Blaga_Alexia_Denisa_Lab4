@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Trip Duration";
+}
+
+<h2>Trip Duration Estimation</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label>Trip distance (km)</label>
+        <input type="number" step="0.1" name="distance" class="form-control" required />
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Estimate</button>
+</form>
+
+@if (ViewBag.Duration != null)
+{
+    <hr />
+    <h4>Estimated duration: @ViewBag.Duration.ToString("0.00") minutes</h4>
+}

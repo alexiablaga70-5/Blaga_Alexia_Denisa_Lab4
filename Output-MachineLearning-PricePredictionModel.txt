@@ -1,0 +1,187 @@
+﻿Set log file path to C:\Users\User\AppData\Local\Temp\MLVSTools\logs\PricePredictionModel-B2QJ2M.txt
+start regression
+Evaluate Metric: RSquared
+Available Trainers: LGBM,FASTFOREST,FASTTREE,LBFGS,SDCA
+Training time in second: 600
+Use train validate split with ratio: 0.2
+|      Trainer                             RSquared   Duration       |
+|--------------------------------------------------------------------|
+|0     FastForestRegression                0.9080     2.1970         |
+|1     LightGbmRegression                  0.8698     1.7490         |
+|2     FastForestRegression                0.9096     1.5340         |
+|3     FastTreeRegression                  -0.2018    1.2640         |
+|4     SdcaRegression                      0.6437     2.1690         |
+|5     FastForestRegression                0.9048     1.3530         |
+|6     LbfgsPoissonRegressionRegression    -1.1900    2.1150         |
+|7     LightGbmRegression                  0.9470     1.7090         |
+|8     LightGbmRegression                  0.8702     1.6350         |
+|9     FastForestRegression                0.9168     2.2550         |
+|10    FastForestRegression                0.9155     1.9000         |
+|11    FastForestRegression                0.9081     2.6080         |
+|12    SdcaRegression                      0.8288     1.9630         |
+|13    FastForestRegression                0.8993     1.4180         |
+|14    LightGbmRegression                  0.9382     119.5940       |
+|15    SdcaRegression                      0.7242     2.0230         |
+|16    LightGbmRegression                  0.9393     66.7540        |
+|17    SdcaRegression                      0.7077     2.0890         |
+|18    LightGbmRegression                  0.8699     1.7450         |
+|19    FastForestRegression                0.9163     4.6300         |
+|20    FastForestRegression                0.9162     2.7530         |
+|21    FastTreeRegression                  -0.4131    1.3450         |
+|22    FastTreeRegression                  0.2642     1.2840         |
+|23    FastForestRegression                0.9165     1.8770         |
+|24    FastForestRegression                0.9161     2.7620         |
+|25    FastTreeRegression                  -0.9223    1.3310         |
+|26    LightGbmRegression                  0.9484     4.3810         |
+|27    FastForestRegression                0.9137     1.9030         |
+|28    SdcaRegression                      0.8200     2.0120         |
+|29    SdcaRegression                      0.7147     2.0140         |
+|30    SdcaRegression                      0.8344     2.0430         |
+|31    FastForestRegression                0.9153     2.0850         |
+|32    LightGbmRegression                  0.9462     6.3500         |
+|33    FastForestRegression                0.9167     2.4470         |
+|34    LbfgsPoissonRegressionRegression    -1.1918    1.9960         |
+|35    SdcaRegression                      0.8398     2.0490         |
+|36    FastTreeRegression                  0.9053     1.4680         |
+|37    FastTreeRegression                  0.9403     1.5230         |
+|38    FastTreeRegression                  0.9462     2.2560         |
+|39    FastTreeRegression                  -0.9888    1.4820         |
+|40    LightGbmRegression                  0.9422     3.4720         |
+|41    SdcaRegression                      0.6857     2.0150         |
+|42    FastForestRegression                0.9113     2.3500         |
+|43    FastForestRegression                0.9167     3.2070         |
+|44    FastForestRegression                0.9168     2.9980         |
+|45    SdcaRegression                      0.8093     2.6790         |
+|46    SdcaRegression                      0.8246     2.2030         |
+|47    SdcaRegression                      0.7728     2.1890         |
+|48    SdcaRegression                      0.6336     2.1990         |
+|49    LbfgsPoissonRegressionRegression    -1.2516    3.3710         |
+|50    SdcaRegression                      0.7931     2.2760         |
+|51    SdcaRegression                      0.8386     2.2380         |
+|52    LightGbmRegression                  0.9478     3.2840         |
+|53    SdcaRegression                      0.7997     2.2520         |
+|54    LightGbmRegression                  0.9364     69.0720        |
+|55    SdcaRegression                      0.8411     4.9570         |
+|56    SdcaRegression                      0.8271     3.1360         |
+|57    SdcaRegression                      0.7084     2.6060         |
+|58    SdcaRegression                      0.6762     2.3980         |
+|59    SdcaRegression                      0.8413     2.4030         |
+|60    FastTreeRegression                  0.9422     12.1540        |
+|61    SdcaRegression                      0.8040     2.4620         |
+|62    FastTreeRegression                  0.9333     1.7900         |
+|63    FastTreeRegression                  0.9423     4.9150         |
+|64    LbfgsPoissonRegressionRegression    -1.2447    2.1850         |
+|65    FastTreeRegression                  0.9420     3.1900         |
+|66    FastTreeRegression                  0.9436     2.0160         |
+|67    FastTreeRegression                  0.9493     3.5250         |
+|68    FastTreeRegression                  0.9492     2.2550         |
+|69    FastTreeRegression                  0.9475     5.8710         |
+|70    FastTreeRegression                  0.9453     2.5630         |
+|71    SdcaRegression                      0.8207     2.1960         |
+|72    FastTreeRegression                  0.6157     4.7040         |
+|73    SdcaRegression                      0.8237     2.2210         |
+|74    SdcaRegression                      0.8431     2.2550         |
+|75    SdcaRegression                      0.7264     2.3140         |
+|76    SdcaRegression                      0.8258     2.3340         |
+|77    LbfgsPoissonRegressionRegression    -1.1892    2.2950         |
+|78    SdcaRegression                      0.8163     2.3260         |
+|79    SdcaRegression                      0.7850     2.3130         |
+|80    SdcaRegression                      0.7275     2.3110         |
+|81    SdcaRegression                      0.8000     2.3830         |
+|82    SdcaRegression                      0.7065     2.3630         |
+|83    SdcaRegression                      0.7967     2.3880         |
+|84    SdcaRegression                      0.8285     2.3580         |
+|85    LbfgsPoissonRegressionRegression    -1.2512    2.4940         |
+|86    SdcaRegression                      0.7226     2.4130         |
+|87    SdcaRegression                      0.8402     2.4430         |
+|88    SdcaRegression                      0.8332     2.3950         |
+|89    LightGbmRegression                  0.9417     8.5770         |
+|90    SdcaRegression                      0.8425     2.4540         |
+|91    SdcaRegression                      0.7680     2.9240         |
+|92    SdcaRegression                      0.7310     3.9660         |
+|93    FastTreeRegression                  0.9458     7.7790         |
+|94    FastTreeRegression                  0.9492     4.3670         |
+|95    FastTreeRegression                  0.7963     3.6090         |
+|96    SdcaRegression                      0.7860     2.5090         |
+|97    SdcaRegression                      0.1603     2.5010         |
+|98    LbfgsPoissonRegressionRegression    -1.2021    3.0690         |
+|99    SdcaRegression                      0.8414     2.6120         |
+|100   SdcaRegression                      0.8200     2.5310         |
+|101   FastTreeRegression                  0.9491     4.2690         |
+|102   FastTreeRegression                  0.9457     4.1840         |
+|103   FastTreeRegression                  0.9491     3.2870         |
+|104   FastTreeRegression                  0.9493     4.1280         |
+|105   FastTreeRegression                  0.9472     3.6690         |
+|106   FastTreeRegression                  0.9489     3.8850         |
+|107   LbfgsPoissonRegressionRegression    -1.1973    2.4940         |
+|108   FastTreeRegression                  0.9490     3.8490         |
+|109   FastTreeRegression                  0.9491     3.5850         |
+|110   FastTreeRegression                  0.9490     3.7520         |
+|111   FastTreeRegression                  0.9491     3.6760         |
+|112   FastTreeRegression                  0.9486     3.7720         |
+|113   FastTreeRegression                  0.9489     3.7270         |
+|114   LbfgsPoissonRegressionRegression    -1.1948    2.4330         |
+|115   FastTreeRegression                  0.9488     3.8680         |
+|116   FastTreeRegression                  0.9490     3.6630         |
+|117   FastTreeRegression                  0.9489     3.6490         |
+|118   FastTreeRegression                  0.9488     3.6750         |
+|119   FastTreeRegression                  0.9488     3.6410         |
+|120   SdcaRegression                      0.8348     2.3870         |
+|121   FastTreeRegression                  0.9491     3.6650         |
+[Source=AutoMLExperiment, Kind=Info] cancel training because cancellation token is invoked...
+[Source=AutoMLExperiment, Kind=Info] cancel training because cancellation token is invoked...
+|--------------------------------------------------------------------|
+|                          Experiment Results                        |
+|--------------------------------------------------------------------|
+|                               Summary                              |
+|--------------------------------------------------------------------|
+|ML Task: regression                                                 |
+|Dataset: C:\Users\User\Downloads\fare-train-data.csv                |
+|Label : fare_amount                                                 |
+|Total experiment time :   600.0000 Secs                             |
+|Total number of models explored: 123                                |
+|--------------------------------------------------------------------|
+|                        Top 5 models explored                       |
+|--------------------------------------------------------------------|
+|      Trainer                             RSquared   Duration       |
+|--------------------------------------------------------------------|
+|67    FastTreeRegression                  0.9493     3.5250         |
+|104   FastTreeRegression                  0.9493     4.1280         |
+|94    FastTreeRegression                  0.9492     4.3670         |
+|68    FastTreeRegression                  0.9492     2.2550         |
+|103   FastTreeRegression                  0.9491     3.2870         |
+|--------------------------------------------------------------------|
+Set up code snippet: //Load sample data
+var sampleData = new PricePredictionModel.ModelInput()
+{
+    Vendor_id = @"CMT",
+    Rate_code = 1F,
+    Passenger_count = 1F,
+    Trip_time_in_secs = 474F,
+    Trip_distance = 1.5F,
+    Payment_type = @"CRD",
+};
+
+//Load model and predict output
+var result = PricePredictionModel.Predict(sampleData);
+
+Generate code behind files
+
+
+Copying generated code to project...
+Copying PricePredictionModel.consumption.cs to folder: C:\Users\User\source\repos\Blaga_Alexia_Denisa_Lab4
+Copying PricePredictionModel.training.cs to folder: C:\Users\User\source\repos\Blaga_Alexia_Denisa_Lab4
+Copying PricePredictionModel.evaluate.cs to folder: C:\Users\User\source\repos\Blaga_Alexia_Denisa_Lab4
+COMPLETED
+
+
+Updating nuget dependencies...
+Starting update NuGet dependencies async.
+Installing nuget package, package ID: Microsoft.ML, package Version: 4.0.0
+Microsoft.ML has been updated successfully
+Installing nuget package, package ID: Microsoft.ML.FastTree, package Version: 4.0.0
+Microsoft.ML.FastTree has been updated successfully
+Installing nuget package, package ID: Plotly.NET, package Version: 3.0.1
+Plotly.NET has been updated successfully
+COMPLETED
+Predicted value: fare_amount:
