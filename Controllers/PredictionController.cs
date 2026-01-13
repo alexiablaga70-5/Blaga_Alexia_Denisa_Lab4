@@ -103,5 +103,72 @@ namespace Blaga_Alexia_Denisa_Lab4.Controllers
 
             return View(await query.ToListAsync());
         }
+
+[HttpGet]
+    public async Task<IActionResult> Dashboard(DateTime? fromDate, DateTime? toDate)
+    {
+        // interogare de bază
+        var query = _context.PredictionHistories.AsQueryable();
+
+        // filtrare după interval
+        if (fromDate.HasValue)
+            query = query.Where(p => p.CreatedAt.Date >= fromDate.Value.Date);
+
+        if (toDate.HasValue)
+            query = query.Where(p => p.CreatedAt.Date <= toDate.Value.Date);
+
+        // 1. Numărul total de predicții (DOAR din interval)
+        var totalPredictions = await query.CountAsync();
+
+        // 2. Preț mediu per tip de plată + count (DOAR din interval)
+        var paymentTypeStats = await query
+            .GroupBy(p => p.PaymentType)
+            .Select(g => new PaymentTypeStat
+            {
+                PaymentType = g.Key,
+                AveragePrice = g.Average(x => x.PredictedPrice),
+                Count = g.Count()
+            })
+            .ToListAsync();
+
+        // 3. Lista de prețuri (DOAR din interval)
+        var allPredictions = await query
+            .Select(p => p.PredictedPrice)
+            .ToListAsync();
+
+        // buckets
+        var buckets = new List<PriceBucketStat>
+    {
+        new PriceBucketStat { Label = "0 - 10" },
+        new PriceBucketStat { Label = "10 - 20" },
+        new PriceBucketStat { Label = "20 - 30" },
+        new PriceBucketStat { Label = "30 - 50" },
+        new PriceBucketStat { Label = "> 50" }
+    };
+
+        foreach (var price in allPredictions)
+        {
+            if (price < 10) buckets[0].Count++;
+            else if (price < 20) buckets[1].Count++;
+            else if (price < 30) buckets[2].Count++;
+            else if (price < 50) buckets[3].Count++;
+            else buckets[4].Count++;
+        }
+
+        // ViewModel (include intervalul curent)
+        var vm = new DashboardViewModel
+        {
+            TotalPredictions = totalPredictions,
+            PaymentTypeStats = paymentTypeStats,
+            PriceBuckets = buckets,
+            FromDate = fromDate,
+            ToDate = toDate
+        };
+
+        return View(vm);
     }
+
 }
+
+}
+
